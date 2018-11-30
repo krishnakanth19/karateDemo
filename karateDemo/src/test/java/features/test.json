@@ -1,0 +1,69 @@
+{
+  "createAccount":{
+    "accountdetail" : {
+    "name": "Sushma",
+    "account": "Leonias",
+    "website": "www.leonia.com",
+    "address": "Boston1255",
+    "city": "medchal",
+    "state": "tamil nadu",
+    "source": "Inquiry",
+    "country": "India",
+    "additionalInfo": "Like to swim",
+    "status": "Active",
+    "marketSegment": "Corporate",
+    "priority": "Low",
+    "business": "It",
+    "salesPerson": "John",
+    "linkTo": "Leonia",
+    "type": "type1",
+    "companyType": null,
+    "permanentProfile": null,
+    "property": "Westin",
+    "keyAccount": "true",
+    "headquarters": "",
+    "zipCode": "87654",
+    "employeeCount": "23456",
+    "ratePlans": "Corporate Cob",
+    "id": 0
+  },
+    "contactdetail" : {
+      "firstName": "Sushma",
+      "title": "Ms.",
+      "lastName": "K",
+      "assistant": "Eamon",
+      "department": "Ux ",
+      "email": "sushma@gmail.com",
+      "phoneNumber": "(792) 212-3658",
+      "fax": "(987) 654-3210",
+      "isActive": "false",
+      "type": "primary",
+      "middleName": "Besdkugu",
+      "designation": "HR",
+      "dateOfBirth": "2018-08-06T18:30:00.000Z",
+      "sports": "Shooting",
+      "arts": "Handmade",
+      "hobbies": "Movies",
+      "cuisine": "Italian",
+      "vacationSpot": "Home",
+      "id": 0
+    }
+  },
+  "updateAccount":{
+    "accountdetail" : {
+      "name": "Sushma L",
+      "account": "Leonias New",
+      "id": 220
+    }
+  },
+  "accountInfo":{
+    "accountId":220
+  },
+  "updateInvalidAccount":{
+    "accountdetail" : {
+      "name": "Sushma L",
+      "account": "Leonias New",
+      "id": 220
+    }
+  }
+}

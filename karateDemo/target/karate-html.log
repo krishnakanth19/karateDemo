@@ -1,0 +1,194 @@
+14:52:11.768 skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+14:52:12.825 request:
+1 > POST http://18.191.44.132:3000/api/accounts/createaccount
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 937
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 18.191.44.132:3000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"accountdetail":{"name":"Sushma","account":"Leonias","website":"www.leonia.com","address":"Boston1255","city":"medchal","state":"tamil nadu","source":"Inquiry","country":"India","additionalInfo":"Like to swim","status":"Active","marketSegment":"Corporate","priority":"Low","business":"It","salesPerson":"John","linkTo":"Leonia","type":"type1","companyType":null,"permanentProfile":null,"property":"Westin","keyAccount":"true","headquarters":"","zipCode":"87654","employeeCount":"23456","ratePlans":"Corporate Cob","id":0},"contactdetail":{"firstName":"Sushma","title":"Ms.","lastName":"K","assistant":"Eamon","department":"Ux ","email":"sushma@gmail.com","phoneNumber":"(792) 212-3658","fax":"(987) 654-3210","isActive":"false","type":"primary","middleName":"Besdkugu","designation":"HR","dateOfBirth":"2018-08-06T18:30:00.000Z","sports":"Shooting","arts":"Handmade","hobbies":"Movies","cuisine":"Italian","vacationSpot":"Home","id":0}}
+
+14:52:13.390 response time in milliseconds: 565
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Connection: keep-alive
+1 < Content-Length: 518
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 26 Nov 2018 09:22:11 GMT
+1 < ETag: W/"206-TrZawCz2EVLw7y2sk80sQMngG9g"
+1 < Vary: Origin, Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"result":{"name":"Sushma","account":"Leonias","website":"www.leonia.com","address":"Boston1255","city":"medchal","state":"tamil nadu","source":"Inquiry","country":"India","additionalInfo":"Like to swim","status":"Active","marketSegment":"Corporate","priority":"Low","business":"It","salesPerson":"John","linkTo":"Leonia","type":"type1","companyType":null,"permanentProfile":null,"property":"Westin","keyAccount":"true","headquarters":"","zipCode":"87654","employeeCount":"23456","ratePlans":"Corporate Cob","id":220}}
+
+14:52:13.428 [print] id from response: 220
+14:52:13.443 skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+14:52:13.459 request:
+1 > POST http://18.191.44.132:3000/api/accounts/updateaccount
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 70
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 18.191.44.132:3000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"accountdetail":{"name":"Sushma L","account":"Leonias New","id":220}}
+
+14:52:13.962 response time in milliseconds: 503
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Connection: keep-alive
+1 < Content-Length: 22
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 26 Nov 2018 09:22:12 GMT
+1 < ETag: W/"16-Uk/Vl0vrgOqJq+2Arxox7c11d0U"
+1 < Vary: Origin, Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"result":{"count":1}}
+
+14:52:13.993 [print] response after update: 1
+14:52:14.015 skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+14:52:14.031 request:
+1 > POST http://18.191.44.132:3000/api/accounts/getaccountinfo
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 17
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 18.191.44.132:3000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"accountId":220}
+
+14:52:14.875 response time in milliseconds: 529
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 26 Nov 2018 09:22:13 GMT
+1 < ETag: W/"401-hQ/LfQJCDxdR9Db6UPNVrUoq8H4"
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"result":[{"name":"Sushma L","account":"Leonias New","website":"www.leonia.com","address":"Boston1255","city":"medchal","state":"tamil nadu","source":"Inquiry","country":"India","additionalInfo":"Like to swim","status":"Active","marketSegment":"Corporate","priority":"Low","business":"It","salesPerson":"John","linkTo":"Leonia","type":"type1","companyType":null,"permanentProfile":null,"property":"Westin","keyAccount":"true","headquarters":"","zipCode":"87654","employeeCount":"23456","ratePlans":"Corporate Cob","id":220,"contact":[{"firstName":"Sushma","accountId":220,"title":"Ms.","lastName":"K","assistant":"Eamon","department":"Ux ","email":"sushma@gmail.com","phoneNumber":"(792) 212-3658","fax":"(987) 654-3210","isActive":"false","type":"primary","middleName":"Besdkugu","designation":"HR","dateOfBirth":"2018-08-06T18:30:00.000Z","sports":"Shooting","arts":"Handmade","hobbies":"Movies","cuisine":"Italian","vacationSpot":"Home","id":912}],"trace":[],"rate":[],"tracking":[],"groupinfo":[],"accountfunction":[]}]}
+
+14:52:14.933 [print] response of accountInfo: 1
+14:52:14.980 skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+14:52:14.980 request:
+1 > DELETE http://18.191.44.132:3000/api/accounts/220
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 18.191.44.132:3000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+
+14:52:15.660 response time in milliseconds: 679
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Connection: keep-alive
+1 < Content-Length: 11
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 26 Nov 2018 09:22:14 GMT
+1 < ETag: W/"b-qA97yBec1rrOyf2eVsYdWwFPOso"
+1 < Vary: Origin, Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"count":1}
+
+14:52:15.685 [print] Deleted count: 1
+14:52:15.718 skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+14:52:15.726 request:
+1 > POST http://18.191.44.132:3000/api/accounts/updateaccount
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 70
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 18.191.44.132:3000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"accountdetail":{"name":"Sushma L","account":"Leonias New","id":220}}
+
+14:52:16.234 response time in milliseconds: 508
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Connection: keep-alive
+1 < Content-Length: 22
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 26 Nov 2018 09:22:14 GMT
+1 < ETag: W/"16-pDpO3km7awK2RvFbYLuhRtAAOPM"
+1 < Vary: Origin, Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"result":{"count":0}}
+
+14:52:16.237 [print] response after update: 0
+14:52:16.240 assertion failed: path: $.result.count, actual: 0, expected: 1, reason: not equal (Integer)
+14:52:16.268 skipping bootstrap configuration: could not find or read file: karate-config.js, prefix: CLASSPATH
+14:52:16.268 request:
+1 > DELETE http://18.191.44.132:3000/api/accounts/220
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 18.191.44.132:3000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+
+14:52:16.771 response time in milliseconds: 502
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Connection: keep-alive
+1 < Content-Length: 11
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 26 Nov 2018 09:22:15 GMT
+1 < ETag: W/"b-ch7MNww9+xUYoTgutbGr6VU0GaU"
+1 < Vary: Origin, Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"count":0}
+
+14:52:16.775 [print] Deleted count: 0
+14:52:16.782 assertion failed: path: $.count, actual: 0, expected: 1, reason: not equal (Integer)
+\",\"estBev\":\"4784\",\"rmFeeWaiver\":\"72\",\"estAv\":\"326\",\"estService\":\"328\",\"totalRoomFee\":\"347854\",\"estFood\":\"4783\",\"totalForecast\":361915,\"useBeo\":true}","statusInfo":"{\"dateDefinite\":\"2018-11-25T18:30:00.000Z\",\"dateCancelled\":\"\",\"dateCreated\":\"2018-11-19T09:04:38.019Z\",\"lastStatus\":\"Proposal\"}","beo":"{\"room\":\"27\",\"food\":\"437\",\"beverage\":\"647\",\"av\":\"2657\",\"service\":\"44537\",\"staff\":\"437\",\"misc\":\"764\",\"parking\":\"6473\",\"tax\":\"467\",\"totalBeo\":56446}","roomSchedule":"[]","id":48}]}]}
+
+16:43:59.578 [print] response of accountInfo: 1
+6:43:05.009 assertion failed: path: $.result.id, actual: null, expected: 207, reason: actual json-path does not exist
+xist
+><script nonce="izq74dTw0krM/GzY5rAj5A==">(function(){var a,b="1";if(document&&document.getElementById)if("undefined"!=typeof XMLHttpRequest)b="2";else if("undefined"!=typeof ActiveXObject){var c,d,e=["MSXML2.XMLHTTP.6.0","MSXML2.XMLHTTP.3.0","MSXML2.XMLHTTP","Microsoft.XMLHTTP"];for(c=0;d=e[c++];)try{new ActiveXObject(d),b="2"}catch(h){}}a=b;if("2"==a&&-1==location.search.indexOf("&gbv=2")){var f=google.gbvu,g=document.getElementById("gbv");g&&(g.value=a);f&&window.setTimeout(function(){location.href=f},0)};}).call(this);</script></form><div id="gac_scont"></div><div style="font-size:83%;min-height:3.5em"><br><div id="gws-output-pages-elements-homepage_additional_languages__als"><style>#gws-output-pages-elements-homepage_additional_languages__als{font-size:small;margin-bottom:24px}#SIvCob{display:inline-block;line-height:28px;}#SIvCob a{padding:0 3px;}.H6sW5{display:inline-block;margin:0 2px;white-space:nowrap}.z4hgWe{display:inline-block;margin:0 2px}</style><div id="SIvCob">Google offered in:  <a href="http://www.google.com/setprefs?sig=0_2fhftxzFNKntemwZ4UlW-j_ah5k%3D&amp;hl=hi&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiatI_OwuDeAhVSVH0KHb77CpIQ2ZgBCAU">&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;</a>    <a href="http://www.google.com/setprefs?sig=0_2fhftxzFNKntemwZ4UlW-j_ah5k%3D&amp;hl=bn&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiatI_OwuDeAhVSVH0KHb77CpIQ2ZgBCAY">&#2476;&#2494;&#2434;&#2482;&#2494;</a>    <a href="http://www.google.com/setprefs?sig=0_2fhftxzFNKntemwZ4UlW-j_ah5k%3D&amp;hl=te&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiatI_OwuDeAhVSVH0KHb77CpIQ2ZgBCAc">&#3108;&#3142;&#3122;&#3137;&#3095;&#3137;</a>    <a href="http://www.google.com/setprefs?sig=0_2fhftxzFNKntemwZ4UlW-j_ah5k%3D&amp;hl=mr&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiatI_OwuDeAhVSVH0KHb77CpIQ2ZgBCAg">&#2350;&#2352;&#2366;&#2336;&#2368;</a>    <a href="http://www.google.com/setprefs?sig=0_2fhftxzFNKntemwZ4UlW-j_ah5k%3D&amp;hl=ta&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiatI_OwuDeAhVSVH0KHb77CpIQ2ZgBCAk">&#2980;&#2990;&#3007;&#2996;&#3021;</a>    <a href="http://www.google.com/setprefs?sig=0_2fhftxzFNKntemwZ4UlW-j_ah5k%3D&amp;hl=gu&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiatI_OwuDeAhVSVH0KHb77CpIQ2ZgBCAo">&#2711;&#2753;&#2716;&#2736;&#2750;&#2724;&#2752;</a>    <a href="http://www.google.com/setprefs?sig=0_2fhftxzFNKntemwZ4UlW-j_ah5k%3D&amp;hl=kn&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiatI_OwuDeAhVSVH0KHb77CpIQ2ZgBCAs">&#3221;&#3240;&#3277;&#3240;&#3233;</a>    <a href="http://www.google.com/setprefs?sig=0_2fhftxzFNKntemwZ4UlW-j_ah5k%3D&amp;hl=ml&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiatI_OwuDeAhVSVH0KHb77CpIQ2ZgBCAw">&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;</a>    <a href="http://www.google.com/setprefs?sig=0_2fhftxzFNKntemwZ4UlW-j_ah5k%3D&amp;hl=pa&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiatI_OwuDeAhVSVH0KHb77CpIQ2ZgBCA0">&#2602;&#2672;&#2588;&#2622;&#2604;&#2624;</a>  </div></div></div><span id="footer"><div style="font-size:10pt"><div style="margin:19px auto;text-align:center" id="fll"><a href="/intl/en/ads/">Advertising�Programs</a><a href="http://www.google.co.in/services/">Business Solutions</a><a href="https://plus.google.com/104205742743787718296" rel="publisher">+Google</a><a href="/intl/en/about.html">About Google</a><a href="http://www.google.com/setprefdomain?prefdom=IN&amp;prev=http://www.google.co.in/&amp;sig=K_9aMbkNMSKXujjjAST6Pldh_-fV8%3D">Google.co.in</a></div></div><p style="color:#767676;font-size:8pt">&copy; 2018 - <a href="/intl/en/policies/privacy/">Privacy</a> - <a href="/intl/en/policies/terms/">Terms</a></p></span></center><script nonce="izq74dTw0krM/GzY5rAj5A==">(function(){window.google.cdo={height:0,width:0};(function(){var a=window.innerWidth,b=window.innerHeight;if(!a||!b){var c=window.document,d="CSS1Compat"==c.compatMode?c.documentElement:c.body;a=d.clientWidth;b=d.clientHeight}a&&b&&(a!=google.cdo.width||b!=google.cdo.height)&&google.log("","","/client_204?&atyp=i&biw="+a+"&bih="+b+"&ei="+google.kEI);}).call(this);})();</script><div id="xjsd"></div><div id="xjsi"><script nonce="izq74dTw0krM/GzY5rAj5A==">(function(){function c(b){window.setTimeout(function(){var a=document.createElement("script");a.src=b;google.timers&&google.timers.load.t&&google.tick&&google.tick("load",{gen204:"xjsls",clearcut:31});document.getElementById("xjsd").appendChild(a)},0)}google.dljp=function(b,a){google.xjsu=b;c(a)};google.dlj=c;}).call(this);if(!google.xjs){window._=window._||{};window._DumpException=window._._DumpException=function(e){throw e};window._F_installCss=window._._F_installCss=function(c){};google.dljp('/xjs/_/js/k\x3dxjs.hp.en.-FjDpBLhWv0.O/m\x3dsb_he,d/am\x3dYsAs/rt\x3dj/d\x3d1/rs\x3dACT90oHJ4rbe2OwpPxhLcnTfwCOaHm4-PA','/xjs/_/js/k\x3dxjs.hp.en.-FjDpBLhWv0.O/m\x3dsb_he,d/am\x3dYsAs/rt\x3dj/d\x3d1/rs\x3dACT90oHJ4rbe2OwpPxhLcnTfwCOaHm4-PA');google.xjs=1;}google.pmc={"sb_he":{"agen":true,"cgen":true,"client":"heirloom-hp","dh":true,"dhqt":true,"ds":"","ffql":"en","fl":true,"host":"google.com","isbh":28,"jsonp":true,"msgs":{"cibl":"Clear Search","dym":"Did you mean:","lcky":"I\u0026#39;m Feeling Lucky","lml":"Learn more","oskt":"Input tools","psrc":"This search was removed from your \u003Ca href=\"/history\"\u003EWeb History\u003C/a\u003E","psrl":"Remove","sbit":"Search by image","srch":"Google Search"},"ovr":{},"pq":"","refpd":true,"rfs":[],"sbpl":24,"sbpr":24,"scd":10,"sce":5,"stok":"DvqXPVFREZF_TGDQVNRPP6nrevk","uhde":false},"d":{},"ZI/YVQ":{},"Qnk92g":{},"U5B21g":{},"YFCs/g":{}};google.x(null,function(){});(function(){var r=[];google.plm(r);})();(function(){var m=[]
+;m.length && google.jsc && google.jsc.m(m);})();</script></div></body></html>
+
+18:34:56.476 [print] {
+  "name": "Sushma",
+  "account": "Leonias",
+  "website": "www.leonia.com",
+  "address": "Boston1255",
+  "city": "medchal",
+  "state": "tamil nadu",
+  "source": "Inquiry",
+  "country": "India",
+  "additionalInfo": "Like to swim",
+  "status": "Active",
+  "marketSegment": "Corporate",
+  "priority": "Low",
+  "business": "It",
+  "salesPerson": "John",
+  "linkTo": "Leonia",
+  "type": "type1",
+  "companyType": null,
+  "permanentProfile": null,
+  "property": "Westin",
+  "keyAccount": "true",
+  "headquarters": "",
+  "zipCode": "87654",
+  "employeeCount": "23456",
+  "ratePlans": "Corporate Cob",
+  "id": 0
+}
+
